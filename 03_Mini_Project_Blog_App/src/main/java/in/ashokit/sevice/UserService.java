@@ -8,4 +8,6 @@ public interface UserService {
 	public String registerUser(Register register);
 	
 	public String loginUser(Login login);
+
+	
 }

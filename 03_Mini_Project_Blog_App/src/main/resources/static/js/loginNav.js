@@ -1,4 +1,4 @@
-document.getElementById("demo").innerHTML = `
+document.getElementById("login-nav").innerHTML = `
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
         <div class="container-fluid ">
           <a class="navbar-brand text-white" href="#">Ashok it Blog App</a>
@@ -6,13 +6,16 @@ document.getElementById("demo").innerHTML = `
           <div class="collapse navbar-collapse  " id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-white" aria-current="page" href="#">All Posts</a>
+                <a class="nav-link active text-white" aria-current="page" href="dashboardpage">Posts</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="registerPage">Register</a>
+                <a class="nav-link text-white" href="blogPage">New Post</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-white" href="loginpage">Login</a>
+                <a class="nav-link text-white" href="#">Comments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="logout">Logout</a>
               </li>
               
             </ul>
@@ -24,5 +27,3 @@ document.getElementById("demo").innerHTML = `
         </div>
       </nav>    
 `;
-
-

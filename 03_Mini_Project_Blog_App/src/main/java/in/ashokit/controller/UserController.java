@@ -50,7 +50,7 @@ public class UserController {
 		}
 		String status = userService.loginUser(login);
 		if (status.contains("Success")) {
-			return"redirect:/dashboard";
+			return"redirect:/dashboardpage";
 		}
 		model.addAttribute("msg",status);
 		return "login";

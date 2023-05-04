@@ -1,5 +1,8 @@
 package in.ashokit.sevice;
 
+import java.util.List;
+import java.util.Optional;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.BeanUtils;
@@ -8,7 +11,9 @@ import org.springframework.stereotype.Service;
 
 import in.ashokit.binding.Login;
 import in.ashokit.binding.Register;
+import in.ashokit.entity.PostEntity;
 import in.ashokit.entity.UserEntity;
+import in.ashokit.repository.PostRepo;
 import in.ashokit.repository.UserRepo;
 
 @Service
@@ -16,7 +21,9 @@ public class UserServiceImpl implements UserService {
 
 	@Autowired
 	private UserRepo userRepo;
-	
+	@Autowired
+	private PostRepo postRepo;
+	@Autowired
 	private HttpSession session;
 	
 	@Override
@@ -53,5 +60,9 @@ public class UserServiceImpl implements UserService {
 		session.setAttribute("userId", entity.getUserId());
 		return "Success";
 	}
+
+	
+	
+	
 
 }
