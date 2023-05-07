@@ -61,6 +61,12 @@ public class UserServiceImpl implements UserService {
 		return "Success";
 	}
 
+	@Override
+	public List<PostEntity> getAllBlog() {
+		List<PostEntity> findAll = postRepo.findAll();	
+		return findAll;
+	}
+
 	
 	
 	
